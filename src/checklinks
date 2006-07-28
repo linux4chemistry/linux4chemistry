@@ -1,0 +1,2 @@
+linkchecker -r1 http://www.redbrick.dcu.ie/~noel/linux4chemistry/index.html -o html > checkall.htm
+
