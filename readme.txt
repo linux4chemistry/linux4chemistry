@@ -21,7 +21,7 @@ At the end of July 2006, the next stage in the evolution of l4c occurred. A proj
 What is chemistry software?
 ===========================
 
-What we say it is, basically.
+What we say it is, basically. :-)
 
 We want to look after chemists and the rest can look after themselves. So...it should not include bioinformatics software nor software for structural biology (although this is a grey area). Remember that if you include one piece of software from a particular area, you need to include them all - this should make you think twice about including things.
 
