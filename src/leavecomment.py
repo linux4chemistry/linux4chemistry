@@ -37,7 +37,7 @@ if not message:
     print """
 <table width="80%" align="center">
 <tr><td>
-<p>To send the editor comments, updates or information on new programs, send an email to the gmail address baoilleach, or ...</p>
+<p>To send the editors comments, updates or information on new programs, send an email to the gmail address baoilleach, or ...</p>
 <ul><li><p>Fill in the box below</p></li>
 <li><p>To avoid spam, any message that does not contain the word <span class="l4c">Linux4Chemistry</span> will be not be forwarded to the editor</p></li>
 <li><p>Please include your email address</p></li>
@@ -60,7 +60,7 @@ else: # Email the comment
     if message[0].lower().find("linux4chemistry")>=0: # Is it a SPAM bot?
         import smtplib
         server = smtplib.SMTP("stumail.dcu.ie")
-        server.sendmail("noel@redbrick.dcu.ie","oboylen2@mail.dcu.ie","From: %s\r\nTo: %s\r\n\r\n%s" % ("L4C comment","oboylen2@mail.dcu.ie",message[0]))
+        server.sendmail("noel@redbrick.dcu.ie","l4c-devel@googlegroups.com","From: %s\r\nTo: %s\r\n\r\n%s" % ("L4C comment","l4c-devel@googlegroups.com",message[0]))
         print """
     <p align="center">Thanks for helping to keep <span class="l4c">Linux4Chemistry</span> up to date.</p>
     <p align="center"><a href="linux4chemistry.py?state=0">Back to main page.</a></p>
