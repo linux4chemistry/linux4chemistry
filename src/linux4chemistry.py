@@ -154,7 +154,7 @@ of the <a href="http://www.vlib.org">WWW Virtual Library</a>
 <p>
 Linux4Chemistry is maintained by <a href="http://www.redbrick.dcu.ie/~noel">Noel O'Boyle</a>.
 Original maintainer (2001-2005) is <a href="http://www.chemia.polsl.gliwice.pl/~nikodem/me.html">Nikodem Kuznik</a>.
-Editors: Paul Czodrowski and Nikodem Kuznik.
+Editors: Rajarshi Guha and Nikodem Kuznik.
 To add a program or leave a comment, click <a href="leavecomment.html">here</a>.
 </p>
 
