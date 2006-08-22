@@ -60,7 +60,7 @@ else: # Email the comment
     if message[0].lower().find("linux4chemistry")>=0: # Is it a SPAM bot?
         import smtplib
         server = smtplib.SMTP("stumail.dcu.ie")
-        server.sendmail("noel@redbrick.dcu.ie","l4c-devel@googlegroups.com","From: %s\r\nTo: %s\r\n\r\n%s" % ("L4C comment","l4c-devel@googlegroups.com",message[0]))
+        server.sendmail("noel@redbrick.dcu.ie","l4c-devel@googlegroups.com","From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n%s" % ("noel@redbrick.dcu.ie","l4c-devel@googlegroups.com","Linux4Chemistry comment",message[0]))
         print """
     <p align="center">Thanks for helping to keep <span class="l4c">Linux4Chemistry</span> up to date.</p>
     <p align="center"><a href="linux4chemistry.py?state=0">Back to main page.</a></p>
