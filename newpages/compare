@@ -1,0 +1,4 @@
+rm fixednewpages/*
+rm fixedoldpages/*
+python comparepages.py
+diff fixedoldpages fixednewpages > diff.txt
