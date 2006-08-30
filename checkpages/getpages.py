@@ -1,14 +1,13 @@
-"""Finds any redirecting web pages."""
-from urllib2 import urlopen,HTTPError
-from httplib import BadStatusLine
+"""Downloads the index page of every program"""
+import os
 import socket
-socket.setdefaulttimeout(10)
-from gnosis.xml.objectify import XML_Objectify
-from cPickle import dump
+
+from datetime import date
+from httplib import BadStatusLine
+from urllib2 import urlopen, HTTPError
+
 from BeautifulSoup import BeautifulSoup
 
-import os,string
-from datetime import date
 
 def normalise(mystring):
     """Replace punctuation with _."""
@@ -18,11 +17,9 @@ def normalise(mystring):
 
 
 if __name__=="__main__":
+    socket.setdefaulttimeout(10)
 
-    py_obj = XML_Objectify("../xml/linux4chemistry.xml")
-    doc = py_obj.make_instance()
-
-    page = {}
+    l4c = open("../data/l4c.txt", "r")
 
     now = date.today().strftime("%d-%m-%y")
 
@@ -30,11 +27,17 @@ if __name__=="__main__":
     ioerror_log = open("ioerror.txt","a")
     nopage_log = open("nopage.txt","a")
 
-    list = [(i,v) for i,v in enumerate(doc.program)]
+    programs = []
+    hrefs = []
+    header = l4c.next()
+    for line in l4c:
+        temp = line.split("\t")
+        programs.append(temp[0])
+        hrefs.append(temp[1])
 
-    for i,program in list:
-        print "%d Checking program %s" % (i,program.name)
-        href = program.href
+    for i,program in enumerate(programs):
+        print "%d Checking program %s" % (i,program)
+        href = hrefs[i]
         if not href.startswith("email/"):
             try:
                 redirect = False
@@ -56,31 +59,31 @@ if __name__=="__main__":
                                 redirect_to = redirect_to[1:]
                             redirect_to = href+"/"+redirect_to
                         print ".............redirection to %s" % redirect_to
-                        print >> redirect_log, "%s\t%s" % (program.name, now)
+                        print >> redirect_log, "%s\t%s" % (program, now)
                         a.close()
                         a = urlopen(redirect_to)
                         webpage = a.read()
             except IOError:
                 print "..................................IOError"
-                print >> ioerror_log, "%s\t%s" % (program.name, now)
+                print >> ioerror_log, "%s\t%s" % (program, now)
             except HTTPError,e:
                 print "..................................HTTPError"
-                print >> ioerror_log, "%s\t%s HTTPError %d" % (program.name,now,e.code)
+                print >> ioerror_log, "%s\t%s HTTPError %d" % (program,now,e.code)
             except BadStatusLine:
                 print "..................................BadStatusLine"
-                print >> ioerror_log, "%s\t%s BadStatusLine" % (program.name,now)
+                print >> ioerror_log, "%s\t%s BadStatusLine" % (program,now)
             except AttributeError:
                 # Page does not exist so...
                 # AttributeError: 'NoneType' object has no attribute 'read'
                 print "............................%s does not exist" % href
-                print >> nopage_log, "%s\t%s" % (program.name, now)
+                print >> nopage_log, "%s\t%s" % (program, now)
             except socket.timeout:
                 print "..........................socket timed out"
-                print >> ioerror_log, "%s\t%s (%s)" % (program.name, now, "socket timed out")
+                print >> ioerror_log, "%s\t%s (%s)" % (program, now, "socket timed out")
             else:
                 a.close()
 
-                output = open(os.path.join("newpages",normalise(program.name)+".html"),"w")
+                output = open(os.path.join("newpages",normalise(program)+".html"),"w")
                 output.write(webpage)
                 output.close()
 
