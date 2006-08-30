@@ -7,7 +7,7 @@ mkdir $dist
 
 cp src/linux4chemistry.py $dist
 cp src/leavecomment.py $dist
-cp data/l4c.txt $dist/tablinux.txt
+cp data/l4c.txt $dist
 cp src/definition.html $dist
 cp src/style.css $dist
 cp img/*.png $dist

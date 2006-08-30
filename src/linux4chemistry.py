@@ -166,7 +166,7 @@ print "<ul>"
 results = 0
 onlyopensource = form.getlist("license")==["Open Source"]
 NAME, WEB, CAT, OTHERCAT, LIC, LANG, DESC = range(7)
-input = open("tablinux.txt","r")
+input = open("l4c.txt","r")
 header = input.next()
 for line in input:
     temp = line.strip().split("\t")
