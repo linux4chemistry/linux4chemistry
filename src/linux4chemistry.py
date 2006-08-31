@@ -156,6 +156,7 @@ Linux4Chemistry is maintained by <a href="http://www.redbrick.dcu.ie/~noel">Noel
 Original maintainer (2001-2005) is <a href="http://www.chemia.polsl.gliwice.pl/~nikodem/me.html">Nikodem Kuznik</a>.
 Editors: Rajarshi Guha and Nikodem Kuznik.
 To add a program or leave a comment, click <a href="leavecomment.html">here</a>.
+Keep informed of new entries with our <a href="l4c-rss.xml">RSS feed</a>. <a href="l4c-rss.xml"><img src="feed-icon-14x14.png" alt="RSS2.0 feed" border="0" /></a>
 </p>
 
 
