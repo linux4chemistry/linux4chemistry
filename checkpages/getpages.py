@@ -1,5 +1,6 @@
 """Downloads the index page of every program"""
 import os
+import string
 import socket
 
 from datetime import date
