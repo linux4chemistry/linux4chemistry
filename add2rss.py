@@ -31,8 +31,7 @@ except IOError: # If you wipe latestadditions.pickle
     items = []
 
 # Add the new item
-items.append(
-       PyRSS2Gen.RSSItem(
+newitem = PyRSS2Gen.RSSItem(
          title = foundprog[0],
          link = foundprog[1],
          description = foundprog[6] + "\n" + 
@@ -42,7 +41,8 @@ items.append(
 ##                          "030906-PyRSS2Gen.html"),
          pubDate = datetime.datetime.now()
          )
-       )
+## items.reverse() # Remove this in future
+items = [newitem] + items
 
 # Create the RSS
 rss = PyRSS2Gen.RSS2(
@@ -51,7 +51,7 @@ rss = PyRSS2Gen.RSS2(
     description = "The latest additions to Linux4Chemistry, "
                   "the website of chemistry software available for Linux",
     lastBuildDate = datetime.datetime.now(),
-    items = items)
+    items = reversed(items))
 rss.write_xml(open(os.path.join("rss", "l4c-rss.xml"), "w"))
 
 print "%s added." % foundprog[0]
