@@ -37,6 +37,7 @@ if __name__=="__main__":
         hrefs.append(temp[1])
 
     for i,program in enumerate(programs):
+        # if i<149: continue
         print "%d Checking program %s" % (i,program)
         href = hrefs[i]
         if not href.startswith("email/"):
@@ -52,7 +53,7 @@ if __name__=="__main__":
                         if k.lower()=="content":
                             content = v
                     if redirect:
-                        redirect_to = content.split("=")[1]
+                        redirect_to = content.split(";")[-1].split("=")[-1]
                         if redirect_to.find("http:")<0: # must be relative href
                             if href[-1]=="/" or href[-1]=="\\":
                                 href = href[:-1]

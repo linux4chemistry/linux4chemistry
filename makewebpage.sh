@@ -5,6 +5,7 @@ dist=website
 rm -r $dist
 mkdir $dist
 
+cp CCL/ccl-rss.xml $dist
 cp src/linux4chemistry.py $dist
 cp src/leavecomment.py $dist
 cp data/l4c.txt $dist
