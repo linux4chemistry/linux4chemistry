@@ -36,9 +36,7 @@ newitem = PyRSS2Gen.RSSItem(
          link = foundprog[1],
          description = foundprog[6] + "\n" + 
             "This software is %s." % foundprog[4],
-## What's a guid?                       
-##         guid = PyRSS2Gen.Guid("http://www.dalkescientific.com/news/"
-##                          "030906-PyRSS2Gen.html"),
+         guid = PyRSS2Gen.Guid(foundprog[1]),
          pubDate = datetime.datetime.now()
          )
 ## items.reverse() # Remove this in future
