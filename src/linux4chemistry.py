@@ -35,9 +35,9 @@ print """Content-Type: text/html
                         <head>
                                 <link rel="shortcut icon" href="favicon.ico">
                                 <meta name="keywords" content="structure, formula, computational, kinetic, simulation, chemistry, chemical, linux, software,
-programs, links, molecular modeling, molecular modelling, visualization, molecular, draw, sketch, graphics, calculations, qunatum, mechanic, dynamic"/>
+programs, links, molecular modeling, molecular modelling, visualization, molecular, draw, sketch, graphics, calculations, quantum, mechanic, dynamic"/>
 
-                                <meta name="description" content="The most up-to-date linux software (over 270) for chemistry including molecular modeling, graphics, visualization, molecular and quantum mechanic, dynamic, computational chemistry and drug discovery software"/>
+                                <meta name="description" content="The most up-to-date linux software (over 300) for chemistry including molecular modeling, graphics, visualization, molecular and quantum mechanic, dynamic, computational chemistry and drug discovery software"/>
 
                                 <title>Linux4Chemistry - Linux software for chemistry: molecular modeling,
 visualization, graphic, quantum mechanic, dynamic, kinetic, simulation</title>
