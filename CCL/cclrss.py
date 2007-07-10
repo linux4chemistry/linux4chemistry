@@ -78,7 +78,7 @@ def main():
     
     print "\nStarting..."
 
-    messages = getlatest(40)
+    messages = getlatest(100)
 ##    outputfile = open("messages.pickle", "w")
 ##    pickle.dump(messages, outputfile)
 ##    outputfile.close()
