@@ -5,14 +5,14 @@ p1
 (dp2
 S'description'
 p3
-S'MeTA Studio is programmable IDE tailored for a computational chemist. It has support for BeanShell and Jython, and integrates Jmol.\nThis software is Open Source.'
+S'massXpert lets users analyse/predict mass spectrometric data on (bio)polymers. Notable features include ex nihilo polymer chemistry definitions, highly sophisticated editing of polymer sequences and chemical reaction simulations.\nThis software is Open Source.'
 p4
 sS'pubDate'
 p5
 cdatetime
 datetime
 p6
-(S'\x07\xd9\x04\x16\t+\x01\x0e\xc5@'
+(S'\x07\xd9\x08\x1b\x10\x1b.\x08T\xd0'
 p7
 tp8
 Rp9
@@ -20,7 +20,7 @@ sS'author'
 p10
 NsS'title'
 p11
-S'MetaStudio'
+S'massXpert'
 p12
 sS'comments'
 p13
@@ -28,7 +28,7 @@ NsS'source'
 p14
 NsS'link'
 p15
-S'http://code.google.com/p/metastudio/'
+S'http://www.massxpert.org/'
 p16
 sS'guid'
 p17
@@ -52,18 +52,18 @@ p24
 (dp25
 S'description'
 p26
-S'open enventory is an integrated laboratory journal and inventory program. It is a web application that runs in your browser. Automatic acquisition of freely accessible data from online databases makes manual data acquisition and catalogue searches obsolete, and price surveys can be done with a mouseclick. The laboratory journal uses the information available in the inventory database and makes the data available for all members of a workgroup. Both inventory and laboratory journal have the ability to allow data exchange between workgroups. \nThis software is Open Source.'
+S'pDynamo is an open source program library that has been designed for the simulation of molecular systems using quantum chemical (QC), molecular mechanical (MM) and hybrid QC/MM potential energy functions.\nThis software is Open Source.'
 p27
 sS'pubDate'
 p28
 g6
-(S'\x07\xd9\x04\x16\t*7\x00\xf20'
+(S"\x07\xd9\x08\x1b\x10\x1b'\t\xc4\x00"
 p29
 tp30
 Rp31
 sS'title'
 p32
-S'open enventory'
+S'pDynamo'
 p33
 sS'author'
 p34
@@ -73,7 +73,7 @@ NsS'source'
 p36
 NsS'link'
 p37
-S'http://www.open-enventory.de/'
+S'http://www.pdynamo.org'
 p38
 sS'guid'
 p39
@@ -97,12 +97,12 @@ p46
 (dp47
 S'description'
 p48
-S'MAUD (Material Analysis Using Diffraction) is a general diffraction/reflectivity analysis program mainly based on the Rietveld method. It has a GUI, and a wide range of features including ab initio structure solution, various optimisation algorithms, Le Bail fitting and microstruture analysis.\nThis software is Freeware.'
+S'OpenThermo is a program package for statistical thermodynamics computations beyond rigid rotor harmonic oscillator approximation (RRHOA), with taking into account internal rotations and vibration anharmonicity. In contrast to statistical subprograms integrated to QC packages, OpenThermo is designed to make the calculation transparent to user and give maximum control under the choice of used theories and approximations.\nThis software is Open Source.'
 p49
 sS'pubDate'
 p50
 g6
-(S'\x07\xd9\x02\x0c\x0f \x0c\x0e\r\xa8'
+(S'\x07\xd9\x08\x1b\x10\x1b \x07\xdb\xb8'
 p51
 tp52
 Rp53
@@ -110,7 +110,7 @@ sS'author'
 p54
 NsS'title'
 p55
-S'MAUD'
+S'OpenThermo'
 p56
 sS'comments'
 p57
@@ -118,7 +118,7 @@ NsS'source'
 p58
 NsS'link'
 p59
-S'http://www.ing.unitn.it/~maud/'
+S'http://openthermo.sourceforge.net'
 p60
 sS'guid'
 p61
@@ -142,18 +142,18 @@ p68
 (dp69
 S'description'
 p70
-S'MAPS (Materials And Processes Simulations) is a platform for performing materials modeling and simulations. It provides a flexible framework for accessing both proprietary and open-source simulation codes in the areas of quantum, classical, mesoscale and chemical engineering. MAPS serves as an integration tool for all modeling related tasks and data and offers a multi-user/multi-project modeling environment complete with data management.\nThis software is Commercial.'
+S'MeTA Studio is programmable IDE tailored for a computational chemist. It has support for BeanShell and Jython, and integrates Jmol.\nThis software is Open Source.'
 p71
 sS'pubDate'
 p72
 g6
-(S'\x07\xd9\x02\x0c\x0f \x05\x04\x0b('
+(S'\x07\xd9\x04\x16\t+\x01\x0e\xc5@'
 p73
 tp74
 Rp75
 sS'title'
 p76
-S'MAPS'
+S'MetaStudio'
 p77
 sS'author'
 p78
@@ -163,7 +163,7 @@ NsS'source'
 p80
 NsS'link'
 p81
-S'http://www.scienomics.com/products/maps_platform.php'
+S'http://code.google.com/p/metastudio/'
 p82
 sS'guid'
 p83
@@ -187,12 +187,12 @@ p90
 (dp91
 S'description'
 p92
-S'RedMD (Reduced Molecular Dynamics) is an open source package for molecular dynamics simulations and normal mode analysis for coarse-grained models of proteins and nucleic acids. Force fields are based on one-bead elastic network models and their extensions. The code is written in C/C++ and is parallelized.\nThis software is Open Source.'
+S'open enventory is an integrated laboratory journal and inventory program. It is a web application that runs in your browser. Automatic acquisition of freely accessible data from online databases makes manual data acquisition and catalogue searches obsolete, and price surveys can be done with a mouseclick. The laboratory journal uses the information available in the inventory database and makes the data available for all members of a workgroup. Both inventory and laboratory journal have the ability to allow data exchange between workgroups. \nThis software is Open Source.'
 p93
 sS'pubDate'
 p94
 g6
-(S'\x07\xd9\x01\t\x0c*!\r\xd3\x10'
+(S'\x07\xd9\x04\x16\t*7\x00\xf20'
 p95
 tp96
 Rp97
@@ -200,7 +200,7 @@ sS'author'
 p98
 NsS'title'
 p99
-S'RedMD'
+S'open enventory'
 p100
 sS'comments'
 p101
@@ -208,7 +208,7 @@ NsS'source'
 p102
 NsS'link'
 p103
-S'http://bionano.icm.edu.pl/software/'
+S'http://www.open-enventory.de/'
 p104
 sS'guid'
 p105
@@ -232,18 +232,18 @@ p112
 (dp113
 S'description'
 p114
-S'Zodiac is an advanced molecular editor for molecular modelling and computer aided drug design, that offers tools such as energy minimisation, database management, molecular property prediction and front ends to various docking and QM programs. It is cross platform and released under the GPL.\nThis software is Open Source.'
+S'MAUD (Material Analysis Using Diffraction) is a general diffraction/reflectivity analysis program mainly based on the Rietveld method. It has a GUI, and a wide range of features including ab initio structure solution, various optimisation algorithms, Le Bail fitting and microstruture analysis.\nThis software is Freeware.'
 p115
 sS'pubDate'
 p116
 g6
-(S'\x07\xd8\x0b\x11\n9.\r\x94\x90'
+(S'\x07\xd9\x02\x0c\x0f \x0c\x0e\r\xa8'
 p117
 tp118
 Rp119
 sS'title'
 p120
-S'Zodiac'
+S'MAUD'
 p121
 sS'author'
 p122
@@ -253,7 +253,7 @@ NsS'source'
 p124
 NsS'link'
 p125
-S'http://www.zeden.org'
+S'http://www.ing.unitn.it/~maud/'
 p126
 sS'guid'
 p127
@@ -277,12 +277,12 @@ p134
 (dp135
 S'description'
 p136
-S'VB2000 is an ab initio electronic structure package for performing modern Valence Bond (VB) calculations based on a highly efficient VB algorithm - the so called Algebrant Algorithm. It has also a general implementation of the Group Function (GF) Theory, in which a large molecule is described in terms of its constituent parts of physically identifiable "electron groups". It can be used as a stand-alone program, or as a plug-in module for GAMESS and Gaussian.\nThis software is Free for academics.'
+S'MAPS (Materials And Processes Simulations) is a platform for performing materials modeling and simulations. It provides a flexible framework for accessing both proprietary and open-source simulation codes in the areas of quantum, classical, mesoscale and chemical engineering. MAPS serves as an integration tool for all modeling related tasks and data and offers a multi-user/multi-project modeling environment complete with data management.\nThis software is Commercial.'
 p137
 sS'pubDate'
 p138
 g6
-(S'\x07\xd8\x0b\x11\n9)\x07\xa1 '
+(S'\x07\xd9\x02\x0c\x0f \x05\x04\x0b('
 p139
 tp140
 Rp141
@@ -290,7 +290,7 @@ sS'author'
 p142
 NsS'title'
 p143
-S'VB2000'
+S'MAPS'
 p144
 sS'comments'
 p145
@@ -298,7 +298,7 @@ NsS'source'
 p146
 NsS'link'
 p147
-S'http://www.scinetec.com/'
+S'http://www.scienomics.com/products/maps_platform.php'
 p148
 sS'guid'
 p149
@@ -322,18 +322,18 @@ p156
 (dp157
 S'description'
 p158
-S'JMolEditor is a Java-based molecular viewer for quantum chemistry calculations, with support for Gaussian, GAMESS, ADF and Q-Chem calculations. Molecules can be built, and input files can be prepared and submitted. Calculation results, including isosurfaces from cube files, can be displayed.\nThis software is Freeware.'
+S'RedMD (Reduced Molecular Dynamics) is an open source package for molecular dynamics simulations and normal mode analysis for coarse-grained models of proteins and nucleic acids. Force fields are based on one-bead elastic network models and their extensions. The code is written in C/C++ and is parallelized.\nThis software is Open Source.'
 p159
 sS'pubDate'
 p160
 g6
-(S'\x07\xd8\x04\x10\r\x1e:\x04\xf1\xa0'
+(S'\x07\xd9\x01\t\x0c*!\r\xd3\x10'
 p161
 tp162
 Rp163
 sS'title'
 p164
-S'JMolEditor'
+S'RedMD'
 p165
 sS'author'
 p166
@@ -343,7 +343,7 @@ NsS'source'
 p168
 NsS'link'
 p169
-S'http://sf.anu.edu.au/~vvv900/cct/appl/jmoleditor/index.html'
+S'http://bionano.icm.edu.pl/software/'
 p170
 sS'guid'
 p171
@@ -367,12 +367,12 @@ p178
 (dp179
 S'description'
 p180
-S'ChemDoodle is an innovative 2D chemical drawing application which works on any operating system with Java installed. It contains an abbreviation library which can be extended, and can import and export many file formats including ChemDraw Exchange Format.\nThis software is Commercial.'
+S'Zodiac is an advanced molecular editor for molecular modelling and computer aided drug design, that offers tools such as energy minimisation, database management, molecular property prediction and front ends to various docking and QM programs. It is cross platform and released under the GPL.\nThis software is Open Source.'
 p181
 sS'pubDate'
 p182
 g6
-(S'\x07\xd8\x04\x10\r\x1e3\x05\xa5P'
+(S'\x07\xd8\x0b\x11\n9.\r\x94\x90'
 p183
 tp184
 Rp185
@@ -380,7 +380,7 @@ sS'author'
 p186
 NsS'title'
 p187
-S'ChemDoodle'
+S'Zodiac'
 p188
 sS'comments'
 p189
@@ -388,7 +388,7 @@ NsS'source'
 p190
 NsS'link'
 p191
-S'http://www.chemdoodle.com/'
+S'http://www.zeden.org'
 p192
 sS'guid'
 p193
@@ -412,18 +412,18 @@ p200
 (dp201
 S'description'
 p202
-S'Molegro Molecular Viewer is a free cross-platform application for visualization of molecules and analysis of protein-ligand interactions.\nThis software is Freeware.'
+S'VB2000 is an ab initio electronic structure package for performing modern Valence Bond (VB) calculations based on a highly efficient VB algorithm - the so called Algebrant Algorithm. It has also a general implementation of the Group Function (GF) Theory, in which a large molecule is described in terms of its constituent parts of physically identifiable "electron groups". It can be used as a stand-alone program, or as a plug-in module for GAMESS and Gaussian.\nThis software is Free for academics.'
 p203
 sS'pubDate'
 p204
 g6
-(S'\x07\xd8\x01\x18\x10\x12\x04\x02m\x18'
+(S'\x07\xd8\x0b\x11\n9)\x07\xa1 '
 p205
 tp206
 Rp207
 sS'title'
 p208
-S'Molegro Molecular Viewer'
+S'VB2000'
 p209
 sS'author'
 p210
@@ -433,7 +433,7 @@ NsS'source'
 p212
 NsS'link'
 p213
-S'http://www.molegro.com/products.php'
+S'http://www.scinetec.com/'
 p214
 sS'guid'
 p215
@@ -457,12 +457,12 @@ p222
 (dp223
 S'description'
 p224
-S'QMForge is a program to analyze the results of quantum chemistry (DFT) calculations: Gaussian 98/03, ADF, GAMESS (US), GAMESS (UK), and PC-GAMESS files are supported. The following analyses are available for user-defined molecular fragments: Mulliken, C-squared and Overlap Population analyses, Fragment and Charge Decomposition Analyses.\nThis software is Open Source.'
+S'JMolEditor is a Java-based molecular viewer for quantum chemistry calculations, with support for Gaussian, GAMESS, ADF and Q-Chem calculations. Molecules can be built, and input files can be prepared and submitted. Calculation results, including isosurfaces from cube files, can be displayed.\nThis software is Freeware.'
 p225
 sS'pubDate'
 p226
 g6
-(S"\x07\xd7\x0b\t\r'\x01\x0eH@"
+(S'\x07\xd8\x04\x10\r\x1e:\x04\xf1\xa0'
 p227
 tp228
 Rp229
@@ -470,7 +470,7 @@ sS'author'
 p230
 NsS'title'
 p231
-S'QMForge'
+S'JMolEditor'
 p232
 sS'comments'
 p233
@@ -478,7 +478,7 @@ NsS'source'
 p234
 NsS'link'
 p235
-S'http://qmforge.sourceforge.net/'
+S'http://sf.anu.edu.au/~vvv900/cct/appl/jmoleditor/index.html'
 p236
 sS'guid'
 p237
@@ -502,18 +502,18 @@ p244
 (dp245
 S'description'
 p246
-S'AGM Build can be used to build and prepare molecules for molecular mechanics calculations, while its companion program is a 3D viewer and conformational editor for molecular structures. Note that the add-on library of amino acids for AGM Build requires purchase.\nThis software is Open Source.'
+S'ChemDoodle is an innovative 2D chemical drawing application which works on any operating system with Java installed. It contains an abbreviation library which can be extended, and can import and export many file formats including ChemDraw Exchange Format.\nThis software is Commercial.'
 p247
 sS'pubDate'
 p248
 g6
-(S'\x07\xd7\t\x03\r\x17 \x06\x16\x98'
+(S'\x07\xd8\x04\x10\r\x1e3\x05\xa5P'
 p249
 tp250
 Rp251
 sS'title'
 p252
-S'AGM Build and AGM View'
+S'ChemDoodle'
 p253
 sS'author'
 p254
@@ -523,7 +523,7 @@ NsS'source'
 p256
 NsS'link'
 p257
-S'http://www.agilemolecule.com/Products.html'
+S'http://www.chemdoodle.com/'
 p258
 sS'guid'
 p259
@@ -547,12 +547,12 @@ p266
 (dp267
 S'description'
 p268
-S'Quantum is a pure physics based molecular docking software which calculates Kd of a protein-ligand complex, and ligand position in the protein active site. This enables virtual screening of compound libraries. The calculation takes into account metals and other hetatoms in the protein active site as well as protein flexibility.\nThis software is Commercial.'
+S'Molegro Molecular Viewer is a free cross-platform application for visualization of molecules and analysis of protein-ligand interactions.\nThis software is Freeware.'
 p269
 sS'pubDate'
 p270
 g6
-(S'\x07\xd7\x07\n\x0c.\x0c\x0c<\xd0'
+(S'\x07\xd8\x01\x18\x10\x12\x04\x02m\x18'
 p271
 tp272
 Rp273
@@ -560,7 +560,7 @@ sS'author'
 p274
 NsS'title'
 p275
-S'Quantum'
+S'Molegro Molecular Viewer'
 p276
 sS'comments'
 p277
@@ -568,7 +568,7 @@ NsS'source'
 p278
 NsS'link'
 p279
-S'http://www.q-pharm.com/'
+S'http://www.molegro.com/products.php'
 p280
 sS'guid'
 p281
@@ -592,18 +592,18 @@ p288
 (dp289
 S'description'
 p290
-S'Avogadro is an advanced molecular editor designed for cross-platform use in computational chemistry, molecular modeling, bioinformatics, materials science, and related areas. It offers a flexible rendering engine and a powerful plugin architecture.\nThis software is Open Source.'
+S'QMForge is a program to analyze the results of quantum chemistry (DFT) calculations: Gaussian 98/03, ADF, GAMESS (US), GAMESS (UK), and PC-GAMESS files are supported. The following analyses are available for user-defined molecular fragments: Mulliken, C-squared and Overlap Population analyses, Fragment and Charge Decomposition Analyses.\nThis software is Open Source.'
 p291
 sS'pubDate'
 p292
 g6
-(S'\x07\xd7\x06\x07\x10\x14\n\n{\x98'
+(S"\x07\xd7\x0b\t\r'\x01\x0eH@"
 p293
 tp294
 Rp295
 sS'title'
 p296
-S'Avogadro'
+S'QMForge'
 p297
 sS'author'
 p298
@@ -613,7 +613,7 @@ NsS'source'
 p300
 NsS'link'
 p301
-S'http://avogadro.sourceforge.net/wiki/'
+S'http://qmforge.sourceforge.net/'
 p302
 sS'guid'
 p303
@@ -637,12 +637,12 @@ p310
 (dp311
 S'description'
 p312
-S"Atomistix ToolKit, ATK, is a first principles electronic structure program capable of modeling electrical properties of nanostructured systems coupled to semi-infinite electrodes (using non-equilibrium Green's functions). The key features are calculation of electrical properties of nanoscale devices, access to advanced DFT algorithms, support for molecular systems, bulk and periodic systems, and two probe systems. In addition there is a Python-based scripting environment.\nThis software is Commercial."
+S'AGM Build can be used to build and prepare molecules for molecular mechanics calculations, while its companion program is a 3D viewer and conformational editor for molecular structures. Note that the add-on library of amino acids for AGM Build requires purchase.\nThis software is Open Source.'
 p313
 sS'pubDate'
 p314
 g6
-(S'\x07\xd7\x04\x04\x0c;\x01\t+\xa8'
+(S'\x07\xd7\t\x03\r\x17 \x06\x16\x98'
 p315
 tp316
 Rp317
@@ -650,7 +650,7 @@ sS'author'
 p318
 NsS'title'
 p319
-S'Atomistix ToolKit'
+S'AGM Build and AGM View'
 p320
 sS'comments'
 p321
@@ -658,7 +658,7 @@ NsS'source'
 p322
 NsS'link'
 p323
-S'http://www.atomistix.com/index.php?id=atk'
+S'http://www.agilemolecule.com/Products.html'
 p324
 sS'guid'
 p325
@@ -682,18 +682,18 @@ p332
 (dp333
 S'description'
 p334
-S'molsKetch is a molecular drawing tool for 2D molecular structures. Its goal is to help you draw molecules quick and easily. As well as allowing the user to export high quality images in a number of vector and bitmap formats, it can read and write multiple chemical file formats (using the Open Babel library). molsKetch features intelligent addition/removal of hydrogen atoms and a built-in library that provides quick access to regularly used molecules and functional groups.\nThis software is Open Source.'
+S'Quantum is a pure physics based molecular docking software which calculates Kd of a protein-ligand complex, and ligand position in the protein active site. This enables virtual screening of compound libraries. The calculation takes into account metals and other hetatoms in the protein active site as well as protein flexibility.\nThis software is Commercial.'
 p335
 sS'pubDate'
 p336
 g6
-(S'\x07\xd7\x04\x04\x0c:)\x0b\xc7\xa0'
+(S'\x07\xd7\x07\n\x0c.\x0c\x0c<\xd0'
 p337
 tp338
 Rp339
 sS'title'
 p340
-S'molsKetch'
+S'Quantum'
 p341
 sS'author'
 p342
@@ -703,7 +703,7 @@ NsS'source'
 p344
 NsS'link'
 p345
-S'http://molsketch.sourceforge.net'
+S'http://www.q-pharm.com/'
 p346
 sS'guid'
 p347
@@ -727,12 +727,12 @@ p354
 (dp355
 S'description'
 p356
-S'PyVib2 is a program for analyzing vibrational motion and vibrational spectra, written in pure Python. PyVib2 permits the automatic correlation of vibrational motions of molecules thereby allowing an understanding of Raman, Raman optical activity (ROA), infrared vibrational absorption (IR), and vibrational circular dichroism (VCD) spectra. Features include a Versatile representation of vibrational motions, visualization of Raman/ROA and IR/VCD generation in molecules and the production of publication quality spectra. It currently supports DALTON and Gaussian output files.\nThis software is Open Source.'
+S'Avogadro is an advanced molecular editor designed for cross-platform use in computational chemistry, molecular modeling, bioinformatics, materials science, and related areas. It offers a flexible rendering engine and a powerful plugin architecture.\nThis software is Open Source.'
 p357
 sS'pubDate'
 p358
 g6
-(S'\x07\xd7\x02\x1c\x0b\x1d*\x01\xb5\x80'
+(S'\x07\xd7\x06\x07\x10\x14\n\n{\x98'
 p359
 tp360
 Rp361
@@ -740,7 +740,7 @@ sS'author'
 p362
 NsS'title'
 p363
-S'PyVib2'
+S'Avogadro'
 p364
 sS'comments'
 p365
@@ -748,7 +748,7 @@ NsS'source'
 p366
 NsS'link'
 p367
-S'http://pyvib2.sf.net/'
+S'http://avogadro.sourceforge.net/wiki/'
 p368
 sS'guid'
 p369
@@ -772,18 +772,18 @@ p376
 (dp377
 S'description'
 p378
-S'GOLD is a program for calculating the docking modes of small molecules into protein binding sites as part of a virtual screening application. Docking is performed using a genetic algorithm and incorporates full ligand flexibility and partial protein flexibility. The GoldScore and ChemScore scoring functions are available, or a custom scoring function can be implemented. Cavity-bound waters and constraints can be included as part of the docking procedure.\nThis software is Commercial.'
+S"Atomistix ToolKit, ATK, is a first principles electronic structure program capable of modeling electrical properties of nanostructured systems coupled to semi-infinite electrodes (using non-equilibrium Green's functions). The key features are calculation of electrical properties of nanoscale devices, access to advanced DFT algorithms, support for molecular systems, bulk and periodic systems, and two probe systems. In addition there is a Python-based scripting environment.\nThis software is Commercial."
 p379
 sS'pubDate'
 p380
 g6
-(S'\x07\xd7\x02\x1c\x0b\x1d\x1f\x06=\xa8'
+(S'\x07\xd7\x04\x04\x0c;\x01\t+\xa8'
 p381
 tp382
 Rp383
 sS'title'
 p384
-S'GOLD'
+S'Atomistix ToolKit'
 p385
 sS'author'
 p386
@@ -793,7 +793,7 @@ NsS'source'
 p388
 NsS'link'
 p389
-S'http://www.ccdc.cam.ac.uk/products/life_sciences/gold/'
+S'http://www.atomistix.com/index.php?id=atk'
 p390
 sS'guid'
 p391
@@ -817,12 +817,12 @@ p398
 (dp399
 S'description'
 p400
-S'SNF has been developed for the calculation of Infrared, Raman, and VROA spectra using the harmonic approximation for the frequencies and the double harmonic approximation for the intensities. Vibrational frequencies are determined using numerical differentiation of analytical gradients of the total electronic energy, while infrared, Raman, and VROA intensities are obtained by numerical differentiation of dipole moments and (generalized) polarizability tensor components with respect to nuclear coordinates. Single point calculations are carried out using Dalton, Gaussian, Molpro or Turbomole.\nThis software is Open Source.'
+S'molsKetch is a molecular drawing tool for 2D molecular structures. Its goal is to help you draw molecules quick and easily. As well as allowing the user to export high quality images in a number of vector and bitmap formats, it can read and write multiple chemical file formats (using the Open Babel library). molsKetch features intelligent addition/removal of hydrogen atoms and a built-in library that provides quick access to regularly used molecules and functional groups.\nThis software is Open Source.'
 p401
 sS'pubDate'
 p402
 g6
-(S'\x07\xd7\x02\x0e\x0b\x19-\ry8'
+(S'\x07\xd7\x04\x04\x0c:)\x0b\xc7\xa0'
 p403
 tp404
 Rp405
@@ -830,7 +830,7 @@ sS'author'
 p406
 NsS'title'
 p407
-S'SNF'
+S'molsKetch'
 p408
 sS'comments'
 p409
@@ -838,7 +838,7 @@ NsS'source'
 p410
 NsS'link'
 p411
-S'http://www.theochem.ethz.ch/software/snf'
+S'http://molsketch.sourceforge.net'
 p412
 sS'guid'
 p413
@@ -862,18 +862,18 @@ p420
 (dp421
 S'description'
 p422
-S'gElemental is a periodic table viewer derived from GPeriodic that provides detailed information on the chemical elements. It uses the GTK+ toolkit and is available for Linux and other GTK+ platforms. It also provides Python bindings to the data, which is stored in a separate data library.\nThis software is Open Source.'
+S'PyVib2 is a program for analyzing vibrational motion and vibrational spectra, written in pure Python. PyVib2 permits the automatic correlation of vibrational motions of molecules thereby allowing an understanding of Raman, Raman optical activity (ROA), infrared vibrational absorption (IR), and vibrational circular dichroism (VCD) spectra. Features include a Versatile representation of vibrational motions, visualization of Raman/ROA and IR/VCD generation in molecules and the production of publication quality spectra. It currently supports DALTON and Gaussian output files.\nThis software is Open Source.'
 p423
 sS'pubDate'
 p424
 g6
-(S'\x07\xd7\x02\x06\x10\x05\x03\t3x'
+(S'\x07\xd7\x02\x1c\x0b\x1d*\x01\xb5\x80'
 p425
 tp426
 Rp427
 sS'title'
 p428
-S'gElemental'
+S'PyVib2'
 p429
 sS'author'
 p430
@@ -883,7 +883,7 @@ NsS'source'
 p432
 NsS'link'
 p433
-S'http://www.kdau.com/projects/gelemental/'
+S'http://pyvib2.sf.net/'
 p434
 sS'guid'
 p435
@@ -907,12 +907,12 @@ p442
 (dp443
 S'description'
 p444
-S'QuteMol is an open source (GPL), interactive, high quality molecular visualization system that aims to improve clarity and provide an easier understanding of the 3D shape and structure of large molecules or complex proteins. Its features include real time ambient occlusion, depth-aware silhouette enhancement, and automatic generation of animated gifs of rotating molecules for web page animations.\nThis software is Open Source.'
+S'GOLD is a program for calculating the docking modes of small molecules into protein binding sites as part of a virtual screening application. Docking is performed using a genetic algorithm and incorporates full ligand flexibility and partial protein flexibility. The GoldScore and ChemScore scoring functions are available, or a custom scoring function can be implemented. Cavity-bound waters and constraints can be included as part of the docking procedure.\nThis software is Commercial.'
 p445
 sS'pubDate'
 p446
 g6
-(S'\x07\xd7\x02\x06\x10\x04,\nd('
+(S'\x07\xd7\x02\x1c\x0b\x1d\x1f\x06=\xa8'
 p447
 tp448
 Rp449
@@ -920,7 +920,7 @@ sS'author'
 p450
 NsS'title'
 p451
-S'QuteMol'
+S'GOLD'
 p452
 sS'comments'
 p453
@@ -928,7 +928,7 @@ NsS'source'
 p454
 NsS'link'
 p455
-S'http://qutemol.sourceforge.net/'
+S'http://www.ccdc.cam.ac.uk/products/life_sciences/gold/'
 p456
 sS'guid'
 p457
@@ -952,18 +952,18 @@ p464
 (dp465
 S'description'
 p466
-S'FOX performs ab initio crystal structure solution from diffraction data (mostly powder diffraction data). Solutions can be constrained using angle or atom based constraints. Multiple powder patterns can be used simultaneously, and input is using a graphical user interface.\nThis software is Open Source.'
+S'SNF has been developed for the calculation of Infrared, Raman, and VROA spectra using the harmonic approximation for the frequencies and the double harmonic approximation for the intensities. Vibrational frequencies are determined using numerical differentiation of analytical gradients of the total electronic energy, while infrared, Raman, and VROA intensities are obtained by numerical differentiation of dipole moments and (generalized) polarizability tensor components with respect to nuclear coordinates. Single point calculations are carried out using Dalton, Gaussian, Molpro or Turbomole.\nThis software is Open Source.'
 p467
 sS'pubDate'
 p468
 g6
-(S'\x07\xd6\x0b\x17\r\x05-\x08\x12h'
+(S'\x07\xd7\x02\x0e\x0b\x19-\ry8'
 p469
 tp470
 Rp471
 sS'title'
 p472
-S'FOX'
+S'SNF'
 p473
 sS'author'
 p474
@@ -973,193 +973,328 @@ NsS'source'
 p476
 NsS'link'
 p477
-S'http://objcryst.sourceforge.net/Fox'
+S'http://www.theochem.ethz.ch/software/snf'
 p478
 sS'guid'
 p479
-NsS'enclosure'
+(iPyRSS2Gen
+Guid
 p480
-NsS'categories'
-p481
-(lp482
-sba(iPyRSS2Gen
-RSSItem
+(dp481
+S'isPermaLink'
+p482
+I1
+sg479
+g478
+sbsS'enclosure'
 p483
-(dp484
-S'description'
-p485
-S'Bist (Bidimensional Structures) is a chemical drawing program focussed on organic chemistry. Using the OpenBabel API, it can import/export in a wide variety of file formats including CML. A notable feature is that it can automatically parse linear fragments to create a 2D structure.\nThis software is Open Source.'
-p486
-sS'pubDate'
-p487
-g6
-(S'\x07\xd6\n\x1e\x10\x11\x04\x06tX'
-p488
-tp489
-Rp490
-sS'author'
-p491
-NsS'title'
-p492
-S'Bist'
-p493
-sS'comments'
-p494
-NsS'source'
-p495
-NsS'link'
-p496
-S'http://www2.autistici.org/interzona/index.php?mod=03_Bist'
-p497
-sS'guid'
-p498
-NsS'enclosure'
-p499
 NsS'categories'
-p500
-(lp501
+p484
+(lp485
 sba(iPyRSS2Gen
 RSSItem
+p486
+(dp487
+S'description'
+p488
+S'gElemental is a periodic table viewer derived from GPeriodic that provides detailed information on the chemical elements. It uses the GTK+ toolkit and is available for Linux and other GTK+ platforms. It also provides Python bindings to the data, which is stored in a separate data library.\nThis software is Open Source.'
+p489
+sS'pubDate'
+p490
+g6
+(S'\x07\xd7\x02\x06\x10\x05\x03\t3x'
+p491
+tp492
+Rp493
+sS'author'
+p494
+NsS'title'
+p495
+S'gElemental'
+p496
+sS'comments'
+p497
+NsS'source'
+p498
+NsS'link'
+p499
+S'http://www.kdau.com/projects/gelemental/'
+p500
+sS'guid'
+p501
+(iPyRSS2Gen
+Guid
 p502
 (dp503
-S'description'
+S'isPermaLink'
 p504
-S'Debyer takes a file with atom positions as input, and outputs X-ray and neutron diffraction patterns, the total scattering structure function, the pair distribution function (PDF), and related functions such as the RDF (reduced PDF). It can be used for comparison of molecular dynamics simulations or other models of atomistic structure of the material with X-ray and neutron powder diffraction experiments.\nThis software is Open Source.'
+I1
+sg501
+g500
+sbsS'enclosure'
 p505
-sS'pubDate'
+NsS'categories'
 p506
+(lp507
+sba(iPyRSS2Gen
+RSSItem
+p508
+(dp509
+S'description'
+p510
+S'QuteMol is an open source (GPL), interactive, high quality molecular visualization system that aims to improve clarity and provide an easier understanding of the 3D shape and structure of large molecules or complex proteins. Its features include real time ambient occlusion, depth-aware silhouette enhancement, and automatic generation of animated gifs of rotating molecules for web page animations.\nThis software is Open Source.'
+p511
+sS'pubDate'
+p512
+g6
+(S'\x07\xd7\x02\x06\x10\x04,\nd('
+p513
+tp514
+Rp515
+sS'title'
+p516
+S'QuteMol'
+p517
+sS'author'
+p518
+NsS'comments'
+p519
+NsS'source'
+p520
+NsS'link'
+p521
+S'http://qutemol.sourceforge.net/'
+p522
+sS'guid'
+p523
+(iPyRSS2Gen
+Guid
+p524
+(dp525
+S'isPermaLink'
+p526
+I1
+sg523
+g522
+sbsS'enclosure'
+p527
+NsS'categories'
+p528
+(lp529
+sba(iPyRSS2Gen
+RSSItem
+p530
+(dp531
+S'description'
+p532
+S'FOX performs ab initio crystal structure solution from diffraction data (mostly powder diffraction data). Solutions can be constrained using angle or atom based constraints. Multiple powder patterns can be used simultaneously, and input is using a graphical user interface.\nThis software is Open Source.'
+p533
+sS'pubDate'
+p534
+g6
+(S'\x07\xd6\x0b\x17\r\x05-\x08\x12h'
+p535
+tp536
+Rp537
+sS'author'
+p538
+NsS'title'
+p539
+S'FOX'
+p540
+sS'comments'
+p541
+NsS'source'
+p542
+NsS'link'
+p543
+S'http://objcryst.sourceforge.net/Fox'
+p544
+sS'guid'
+p545
+NsS'enclosure'
+p546
+NsS'categories'
+p547
+(lp548
+sba(iPyRSS2Gen
+RSSItem
+p549
+(dp550
+S'description'
+p551
+S'Bist (Bidimensional Structures) is a chemical drawing program focussed on organic chemistry. Using the OpenBabel API, it can import/export in a wide variety of file formats including CML. A notable feature is that it can automatically parse linear fragments to create a 2D structure.\nThis software is Open Source.'
+p552
+sS'pubDate'
+p553
+g6
+(S'\x07\xd6\n\x1e\x10\x11\x04\x06tX'
+p554
+tp555
+Rp556
+sS'title'
+p557
+S'Bist'
+p558
+sS'author'
+p559
+NsS'comments'
+p560
+NsS'source'
+p561
+NsS'link'
+p562
+S'http://www2.autistici.org/interzona/index.php?mod=03_Bist'
+p563
+sS'guid'
+p564
+NsS'enclosure'
+p565
+NsS'categories'
+p566
+(lp567
+sba(iPyRSS2Gen
+RSSItem
+p568
+(dp569
+S'description'
+p570
+S'Debyer takes a file with atom positions as input, and outputs X-ray and neutron diffraction patterns, the total scattering structure function, the pair distribution function (PDF), and related functions such as the RDF (reduced PDF). It can be used for comparison of molecular dynamics simulations or other models of atomistic structure of the material with X-ray and neutron powder diffraction experiments.\nThis software is Open Source.'
+p571
+sS'pubDate'
+p572
 g6
 (S'\x07\xd6\n\x11\t*/\x01~\xd0'
-p507
-tp508
-Rp509
-sS'title'
-p510
-S'Debyer'
-p511
+p573
+tp574
+Rp575
 sS'author'
-p512
-NsS'comments'
-p513
+p576
+NsS'title'
+p577
+S'Debyer'
+p578
+sS'comments'
+p579
 NsS'source'
-p514
+p580
 NsS'link'
-p515
+p581
 S'http://www.unipress.waw.pl/debyer/'
-p516
+p582
 sS'guid'
-p517
+p583
 NsS'enclosure'
-p518
+p584
 NsS'categories'
-p519
-(lp520
+p585
+(lp586
 sba(iPyRSS2Gen
 RSSItem
-p521
-(dp522
+p587
+(dp588
 S'description'
-p523
+p589
 S'fiytk is a tool for curve fitting and data analysis (e.g. baseline correction), used in crystallography, chromatography, photoluminescence or photoelectron spectroscopy, infrared or Raman spectroscopy, and in other fields. Common tasks can be automated with scripts.\nThis software is Open Source.'
-p524
+p590
 sS'pubDate'
-p525
+p591
 g6
 (S'\x07\xd6\n\x11\t**\x0c\xb2\x00'
-p526
-tp527
-Rp528
-sS'author'
-p529
-NsS'title'
-p530
+p592
+tp593
+Rp594
+sS'title'
+p595
 S'fityk'
-p531
-sS'comments'
-p532
+p596
+sS'author'
+p597
+NsS'comments'
+p598
 NsS'source'
-p533
+p599
 NsS'link'
-p534
+p600
 S'http://www.unipress.waw.pl/fityk/'
-p535
+p601
 sS'guid'
-p536
+p602
 NsS'enclosure'
-p537
+p603
 NsS'categories'
-p538
-(lp539
+p604
+(lp605
 sba(iPyRSS2Gen
 RSSItem
-p540
-(dp541
+p606
+(dp607
 S'description'
-p542
+p608
 S'PyDespike is a program to graphically process (ie. despike) Raman and other spectroscopic data. It reduces the tedium involved in removing spikes in data due to artificial background fluctuations.\nThis software is Open Source.'
-p543
+p609
 sS'pubDate'
-p544
+p610
 g6
 (S'\x07\xd6\t\x0c\x0f\x08/\x07nX'
-p545
-tp546
-Rp547
-sS'title'
-p548
-S'PyDespike'
-p549
+p611
+tp612
+Rp613
 sS'author'
-p550
-NsS'comments'
-p551
+p614
+NsS'title'
+p615
+S'PyDespike'
+p616
+sS'comments'
+p617
 NsS'source'
-p552
+p618
 NsS'link'
-p553
+p619
 S'http://pydespike.sourceforge.net/'
-p554
+p620
 sS'guid'
-p555
+p621
 NsS'enclosure'
-p556
+p622
 NsS'categories'
-p557
-(lp558
+p623
+(lp624
 sba(iPyRSS2Gen
 RSSItem
-p559
-(dp560
+p625
+(dp626
 S'description'
-p561
+p627
 S'SketchEl is an interactive chemical molecule sketching tool, designed for quick and simple entry of structures. The feature set is limited to those necessary to enter a single chemical species, in a form that might be used in a cheminformatic database, representing each atom and bond as a part of a labelled graph.\nThis software is Open Source.'
-p562
+p628
 sS'pubDate'
-p563
+p629
 g6
 (S'\x07\xd6\x08\x1f\x10\x0f\r\x03\xa5\t'
-p564
-tp565
-Rp566
-sS'author'
-p567
-NsS'title'
-p568
+p630
+tp631
+Rp632
+sS'title'
+p633
 S'SketchEl'
-p569
-sS'comments'
-p570
+p634
+sS'author'
+p635
+NsS'comments'
+p636
 NsS'source'
-p571
+p637
 NsS'link'
-p572
+p638
 S'http://sketchel.sourceforge.net/'
-p573
+p639
 sS'guid'
-p574
+p640
 NsS'enclosure'
-p575
+p641
 NsS'categories'
-p576
-(lp577
+p642
+(lp643
 sba.
