@@ -34,9 +34,10 @@ DATABASES = {
 }
 
 # Make this unique, and don't share it with anybody.
-# (the instance deployed on openshift expects to find its own in a module
-# dynamically loaded from the $OPENSHIFT_DATA_DIR)
+# (the instancesdeployed on openshift expect to find their own in a module
+# dynamically loaded from the $OPENSHIFT_DATA_DIR, for the development env
+# this is not so important)
 SECRET_KEY = '9b3%js#ais(Ew5s&amp;yc3gnv$w^0crncbq)$Ewoawt73qcvir!x7'
-
+ALLOWED_HOSTS = ['*']
 
 
