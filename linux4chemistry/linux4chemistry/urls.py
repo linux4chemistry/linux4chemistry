@@ -17,5 +17,5 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 
     # redirect everything to the static contents index file
-    url(r'^.*$', RedirectView.as_view(url='/static/index.html')),
+    url(r'^$', RedirectView.as_view(url='/static/index.html')),
 )
