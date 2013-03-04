@@ -1,0 +1,11 @@
+#!/bin/bash
+# This deploy hook gets executed after dependencies are resolved and the
+# build hook has been run but before the application has been started back
+# up again.  This script gets executed directly, so it could be python, php,
+# ruby, etc.
+
+APP_NAME=`cat $OPENSHIFT_REPO_DIR/.app_name`
+
+cd $OPENSHIFT_REPO_DIR/$APP_NAME
+python manage.py syncdb --noinput
+python manage.py collectstatic --noinput

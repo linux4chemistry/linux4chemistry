@@ -1,0 +1,17 @@
+#!/bin/bash
+# The logic to start up your application should be put in this
+# script. The application will work only if it binds to
+# $OPENSHIFT_INTERNAL_IP:8080
+
+APP_NAME=`cat $OPENSHIFT_REPO_DIR/.app_name`
+
+cd $OPENSHIFT_REPO_DIR/$APP_NAME
+
+uwsgi \
+    -s $OPENSHIFT_INTERNAL_IP:$OPENSHIFT_INTERNAL_PORT \
+    --socket-protocol http \
+    --module $APP_NAME.wsgi:application \
+    --pp $OPENSHIFT_REPO_DIR/$APP_NAME \
+    -d $OPENSHIFT_DIY_LOG_DIR/$APP_NAME-uwsgi.log \
+    --pidfile $OPENSHIFT_TMP_DIR/uwsgi.pid \
+    --static-map /static=$OPENSHIFT_REPO_DIR/static
