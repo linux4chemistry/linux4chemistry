@@ -3,6 +3,8 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_INTERNAL_IP:8080
 
+. ${OPENSHIFT_DATA_DIR}env.sh
+
 APP_NAME=`cat $OPENSHIFT_REPO_DIR/.app_name`
 
 cd $OPENSHIFT_REPO_DIR/$APP_NAME

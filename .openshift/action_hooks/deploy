@@ -4,6 +4,8 @@
 # up again.  This script gets executed directly, so it could be python, php,
 # ruby, etc.
 
+. ${OPENSHIFT_DATA_DIR}env.sh
+
 APP_NAME=`cat $OPENSHIFT_REPO_DIR/.app_name`
 
 cd $OPENSHIFT_REPO_DIR/$APP_NAME/oldsite

@@ -4,5 +4,6 @@
 # before the deploy step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
 
+. ${OPENSHIFT_DATA_DIR}env.sh
 pip install --use-mirrors -r $OPENSHIFT_REPO_DIR/requirements.txt
 
