@@ -1,4 +1,5 @@
 *~
 *.py[co]
 linux4chemistry/oldsite/website
+linux4chemistry/linux4chemistry/settings/__init__.py
 
