@@ -1,0 +1,111 @@
+{% extends 'oldsite/base.html' %}
+
+{% block title %}
+Linux4Chemistry - Linux software for chemistry: molecular modeling,
+visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
+{% endblock %}
+
+{% block extra_head %}
+    <script language="javascript">
+      function clickAll (form) {
+          for (i = 0; i < form.license.length; i++) {
+              form.license[i].checked = true;
+	  }
+      }
+      function clickNone (form) {
+	  for (i = 0; i < form.license.length; i++) {
+              form.license[i].checked = false;
+          }
+      }
+    </script>
+  </head>
+{% endblock %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block page_contents %}
+    <table width="95%" align="center">
+      <tr>
+	<td><img src="{{ STATIC_URL }}img/logo_200x305.png" 
+		 alt="Welcome to Linux4Chemistry"/></td>
+	<td>
+	  <h1 style="{text-align:center; font-family:Arial}">Linux4Chemistry</h1>
+	  <table align="center" cellpadding="5%">
+	    <tr align="center">
+	      <td></td>
+	      <td><img src="{{ STATIC_URL }}img/opensource_big.png" name="opensource" align="bottom" border="0"/></td>
+	      <td><img src="{{ STATIC_URL }}img/freeware_big.png" name="freeware" align="bottom" border="0"/></td>
+	      <td><img src="{{ STATIC_URL }}img/academic_big.png" name="academic" align="bottom" border="0"/></td>
+	      <td><img SRC="{{ STATIC_URL }}img/shareware_big.png" align="bottom" border="0"/></td>
+	      <td><img SRC="{{ STATIC_URL }}img/commercial_big.png" align="bottom" border="0"/></td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>Open Source</td>
+	      <td>Freeware</td>
+	      <td>Free for academics</td>
+	      <td>Shareware</td>
+	      <td>Commercial</td>
+	      <td><font size="-1">
+		  <a href="{% url 'license_definition' %}">[Explain]</a>
+	      </font></td>
+	    </tr>
+	    <form action="http://FIXME" method="post">
+	      <tr>
+		<td>
+		  <input type="button" name="selectall" value="All" 
+			 onClick="clickAll(this.form)"/>
+		</td>
+		<!-- render checkboxes -->
+		<td>
+		  <input type="button" name="selectnone" value="None" 
+			 onClick="clickNone(this.form)"/>
+		</td>
+	      </tr>
+	      <tr>
+		<td></td>
+		<td colspan="5" align="center">
+		  <!--select name="category">
+		      </select-->
+		  
+		  <input type="submit" value="Search"/></td>
+	      </tr>
+	    </form>
+	    
+	  </table>
+	</td>
+	<td align="center">
+	  <p><a href="http://www.vlib.org" target="_blank">
+	      <img src="http://vlib.org/VL.gif" alt="WWW Virtual Library" 
+		   border="0" align="center"></a></p>
+	  <strong>
+	    <font face="Arial" size="-1">
+	      <a href="http://www.liv.ac.uk/Chemistry/Links/links.html">
+		Chemistry Section</a><br/>
+	      of the <a href="http://www.vlib.org">WWW Virtual Library</a>
+	    </font>
+	  </strong>
+	</td>
+      </tr>
+    </table>
+    
+    <p>
+      Linux4Chemistry is maintained by 
+      <a href="http://www.redbrick.dcu.ie/~noel">Noel O'Boyle</a>.
+      Original maintainer (2001-2005) is Nikodem Kuznik.
+      To add a program or leave a comment, click 
+      <a href="{% url 'leave_comment' %}">here</a>.
+      Keep informed of new entries with our RSS feed. 
+      <a href="l4c-rss.xml">
+	<img src="feed-icon-14x14.png" alt="L4C feed" border="0" /></a> 
+      Keep up to date with the CCL list with this unofficial RSS feed. 
+      <a href="http://baoilleach.webfactional.com/site_media/RSS/ccl.rss">
+	<img src="feed-icon-14x14.png" alt="CCL feed" border="0" /></a>
+    </p>
+
+    <br/>
+
+    <!--ul></ul-->
+{% endblock %}    

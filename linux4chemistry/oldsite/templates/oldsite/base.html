@@ -1,0 +1,53 @@
+<!-- not yet DOCTYPE html -->
+<html>
+  <head>
+    <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
+    <meta name="keywords" 
+	  content="structure, formula, computational, kinetic, simulation, 
+		   chemistry, chemical, linux, software, programs, links, 
+		   molecular modeling, molecular modelling, visualization, 
+		   molecular, draw, sketch, graphics, calculations, quantum, 
+		   mechanic, dynamic"/>
+    <meta name="description" 
+	  content="The most up-to-date linux software (over 300) for chemistry
+		   including molecular modeling, graphics, visualization,
+		   molecular and quantum mechanic, dynamic, computational
+		   chemistry and drug discovery software"/>
+
+    <title>{% block title %}Linux4Chemistry{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" 
+	  href="{{ STATIC_URL }}css/style.css" media="all"/>
+    {% block extra_head %}
+    {% endblock %}
+  </head>
+  <body bgcolor="#f0f0f8">
+    <br>
+
+  {% block page_header %}
+    <table width="60%" align="center">
+      <tr>
+	<td><img src="{{ STATIC_URL }}img/logo_200x305.png" 
+		 alt="Welcome to Linux4Chemistry"/></td>
+	<td align="right">
+	  <h1 style="{text-align:center; font-family:Arial}">
+	    <a href="{% url 'linux4chemistry' %}">Linux4Chemistry</a></h1>
+	</td>
+	<td align="center">
+	  <p><a href="http://www.vlib.org" target="_blank"><img src="http://vlib.org/VL.gif" alt="WWW Virtual Library" border="0" align="center"></a></p>
+	  <strong>
+	    <font face="Arial" size="-1">
+	      <a href="http://www.liv.ac.uk/Chemistry/Links/links.html">Chemistry Section</a><br/>
+	      of the <a href="http://www.vlib.org">WWW Virtual Library</a>
+	    </font>
+	  </strong>
+	</td>
+      </tr>
+    </table>
+  {% endblock %}
+
+  {% block page_contents %}
+  {% endblock %}
+
+  </body>
+</html>
