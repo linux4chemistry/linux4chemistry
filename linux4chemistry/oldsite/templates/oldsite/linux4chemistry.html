@@ -52,13 +52,18 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 		  <a href="{% url 'license_definition' %}">[Explain]</a>
 	      </font></td>
 	    </tr>
-	    <form action="http://FIXME" method="post">
+	    <form action="{% url 'home' %}" method="post">
+	      {% csrf_token %}
 	      <tr>
 		<td>
 		  <input type="button" name="selectall" value="All" 
 			 onClick="clickAll(this.form)"/>
 		</td>
-		<!-- render checkboxes -->
+		<td align="center">{{ form.open_source }}</td>
+		<td align="center">{{ form.freeware }}</td>
+		<td align="center">{{ form.free_for_academics }}</td>
+		<td align="center">{{ form.shareware }}</td>
+		<td align="center">{{ form.commercial }}</td>
 		<td>
 		  <input type="button" name="selectnone" value="None" 
 			 onClick="clickNone(this.form)"/>
@@ -67,10 +72,8 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 	      <tr>
 		<td></td>
 		<td colspan="5" align="center">
-		  <!--select name="category">
-		      </select-->
-		  
-		  <input type="submit" value="Search"/></td>
+		  {{ form.category }}
+		  &nbsp;<input type="submit" value="Search"/></td>
 	      </tr>
 	    </form>
 	    
@@ -99,13 +102,33 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
       <a href="{% url 'leave_comment' %}">here</a>.
       Keep informed of new entries with our RSS feed. 
       <a href="l4c-rss.xml">
-	<img src="feed-icon-14x14.png" alt="L4C feed" border="0" /></a> 
+	<img src="{{ STATIC_URL }}img/feed-icon-14x14.png" 
+	     alt="L4C feed" border="0" /></a> 
       Keep up to date with the CCL list with this unofficial RSS feed. 
       <a href="http://baoilleach.webfactional.com/site_media/RSS/ccl.rss">
-	<img src="feed-icon-14x14.png" alt="CCL feed" border="0" /></a>
+	<img src="{{ STATIC_URL }}img/feed-icon-14x14.png" 
+	     alt="CCL feed" border="0" /></a>
     </p>
 
     <br/>
 
-    <!--ul></ul-->
+    <ul>{% for program in programs %}
+      <li>
+	<table width="97%">
+	  <tr>
+	    <td>
+	      <strong>
+		<a href="{{ program.web }}">{{ program.name }}</a>
+	      </strong>
+	      <tt>{{ program.categories }}</tt>
+            </td>
+	    <td align="right">
+	      <tt>{{ program.lang }}</tt>
+	    </td>
+	  </tr>
+	</table>
+	<ul><li><p style="text-align:justify">{{ program.desc }}</p></li></ul>
+      </li>
+    {% endfor %}</ul>
+
 {% endblock %}    
