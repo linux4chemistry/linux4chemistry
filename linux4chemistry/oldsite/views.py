@@ -39,15 +39,16 @@ class Linux4ChemistryView(FormView):
         with open(filepath, 'r') as data:
             data.next() # skip header
             for record in data:
-                fields = record.strip().split('\t')
+                fields = [f.strip() for f in record.split('\t')]
                 (name, web, cat, other_cat, lic, lang, desc) = fields[:7]
-                cat = [c.strip() for c in cat.split(',')]
-                
+                cat = [c.strip() for c in cat.split(',')] if cat else []
+                other_cat = ([c.strip() for c in other_cat.split(',')] 
+                             if other_cat else [])
                 # check 
                 
                 categories = ', '.join(
                     [forms.CATEGORIES.get(c, c) for c in cat] +
-                    [c.strip() for c in other_cat.split(',')]
+                    other_cat
                     )
                 
                 programs.append(
