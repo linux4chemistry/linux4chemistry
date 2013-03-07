@@ -112,6 +112,7 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 
     <br/>
 
+    {% if programs %}
     <ul>{% for program in programs %}
       <li>
 	<table width="97%">
@@ -130,5 +131,9 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 	<ul><li><p style="text-align:justify">{{ program.desc }}</p></li></ul>
       </li>
     {% endfor %}</ul>
+      <p align="center">{{ programs|length }} results found</p>
+    {% else %}
+      <p align="center">No results found</p>
+    {% endif %}
 
 {% endblock %}    
