@@ -1,7 +1,7 @@
 # Django settings for linux4chemistry project.
 import os
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
