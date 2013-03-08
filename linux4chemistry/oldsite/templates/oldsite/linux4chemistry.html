@@ -6,22 +6,6 @@ Linux4Chemistry - Linux software for chemistry: molecular modeling,
 visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 {% endblock %}
 
-{% block extra_head %}
-    <script language="javascript">
-      function clickAll (form) {
-          for (i = 0; i < form.license.length; i++) {
-              form.license[i].checked = true;
-	  }
-      }
-      function clickNone (form) {
-	  for (i = 0; i < form.license.length; i++) {
-              form.license[i].checked = false;
-          }
-      }
-    </script>
-  </head>
-{% endblock %}
-
 {% block page_header %}
 {% endblock %}
 
@@ -57,8 +41,7 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 	      {% csrf_token %}
 	      <tr>
 		<td>
-		  <input type="button" name="selectall" value="All" 
-			 onClick="clickAll(this.form)"/>
+		  <input type="button" id="select-all" value="All"/>
 		</td>
 		<td align="center">{{ form.open_source }}</td>
 		<td align="center">{{ form.freeware }}</td>
@@ -66,8 +49,7 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 		<td align="center">{{ form.shareware }}</td>
 		<td align="center">{{ form.commercial }}</td>
 		<td>
-		  <input type="button" name="selectnone" value="None" 
-			 onClick="clickNone(this.form)"/>
+		  <input type="button" id="select-none" value="None"/>
 		</td>
 	      </tr>
 	      <tr>
@@ -138,4 +120,16 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
       <p align="center">No results found</p>
     {% endif %}
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script>
+      $(function() {
+        $('#select-all').click(function (e) {
+          $('input:checkbox').prop('checked', true);
+        });
+        $('#select-none').click(function (e) {
+          $('input:checkbox').prop('checked', false);
+        });
+      });
+    </script>
 {% endblock %}    
