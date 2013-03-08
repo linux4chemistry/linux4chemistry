@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     'devel-l4c.rhcloud.com',
     ]
 
+"""
 LOGGING['handlers'].update({
         'logfile': {
             'class': 'logging.handlers.WatchedFileHandler',
@@ -45,3 +46,4 @@ LOGGING['loggers'].update({
             'propagate': False,
             },
         })
+"""
