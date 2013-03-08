@@ -1,4 +1,5 @@
 {% extends 'oldsite/base.html' %}
+{% load l4c %}
 
 {% block title %}
 Linux4Chemistry - Linux software for chemistry: molecular modeling,
@@ -61,7 +62,7 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 		</td>
 		<td align="center">{{ form.open_source }}</td>
 		<td align="center">{{ form.freeware }}</td>
-		<td align="center">{{ form.free_for_academics }}</td>
+		<td align="center">{{ form.academic }}</td>
 		<td align="center">{{ form.shareware }}</td>
 		<td align="center">{{ form.commercial }}</td>
 		<td>
@@ -121,6 +122,7 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 	      <strong>
 		<a href="{{ program.web }}">{{ program.name }}</a>
 	      </strong>
+	      {{ program.lic|license_img }}
 	      <tt>{{ program.categories }}</tt>
             </td>
 	    <td align="right">

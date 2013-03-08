@@ -37,11 +37,11 @@ CATEGORIES = dict(CATEGORIES)
 
 class Linux4ChemistryForm(forms.Form):
     
-    open_source = forms.BooleanField()
-    freeware = forms.BooleanField()
-    free_for_academics = forms.BooleanField()
-    shareware = forms.BooleanField()
-    commercial = forms.BooleanField()
+    open_source = forms.BooleanField(required=False)
+    freeware = forms.BooleanField(required=False)
+    academic = forms.BooleanField(required=False)
+    shareware = forms.BooleanField(required=False)
+    commercial = forms.BooleanField(required=False)
 
     category = forms.ChoiceField(choices=CATEGORY_CHOICES)
 
