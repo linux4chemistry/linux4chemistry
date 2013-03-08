@@ -8,9 +8,6 @@
 
 APP_NAME=`cat $OPENSHIFT_REPO_DIR/.app_name`
 
-cd $OPENSHIFT_REPO_DIR/$APP_NAME/oldsite
-./makewebpage.sh
-
 cd $OPENSHIFT_REPO_DIR/$APP_NAME/$APP_NAME/settings
 ln -s openshift.py __init__.py
 
