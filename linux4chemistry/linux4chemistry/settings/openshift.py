@@ -30,6 +30,9 @@ SECRET_KEY = secret.SECRET_KEY
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = [
     'devel-l4c.rhcloud.com',
+    'test-l4c.rhcloud.com',
+    'prod-l4c.rhcloud.com',
+    'www.linux4chemistry.info',
     ]
 
 """
