@@ -45,12 +45,12 @@ items = [newitem] + items
 # Create the RSS
 rss = PyRSS2Gen.RSS2(
     title = "New additions to Linux4Chemistry",
-    link = "http://www.redbrick.dcu.ie/~noel/linux4chemistry/",
+    link = "http://www.linux4chemistry.info/",
     description = "The latest additions to Linux4Chemistry, "
                   "the website of chemistry software available for Linux",
     lastBuildDate = datetime.datetime.now(),
     items = reversed(items))
-rss.write_xml(open(os.path.join("rss", "l4c-rss.xml"), "w"))
+rss.write_xml(open(os.path.join("static", "rss", "l4c-rss.xml"), "w"))
 
 print "%s added." % foundprog[0]
 
