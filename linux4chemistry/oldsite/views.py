@@ -99,3 +99,7 @@ class Linux4ChemistryView(FormView):
 
 class LicenseDefinitionView(TemplateView):
     template_name = 'oldsite/definition.html'
+            
+
+class ContributorsView(TemplateView):
+    template_name = 'oldsite/contributors.html'
