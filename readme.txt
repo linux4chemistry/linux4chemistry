@@ -2,7 +2,7 @@ Brief history of Linux4Chemistry
 
 Linux4Chemistry (l4c to save typing) was set up by Nikodem Kuznik in 2001 and was hosted at http://zeus.polsl.gliwice.pl/~nikodem/linux4chemistry.html. Until the end of 2005 Nikodem was the sole maintainer and editor.
 
-At that point, Noel O'Boyle got in touch regarding adding some icons for open source code, and since Nikodem felt that he no longer had the time to keep updating the page, Noel arranged to take over the maintainence of the website, which was now hosted at http://www.redbrick.dcu.ie/~noel/linux4chemistry/. Nikodem remained as editor along with Paul Czodrowski.
+At that point, Noel O'Boyle got in touch regarding adding some icons for open source code, and since Nikodem felt that he no longer had the time to keep updating the page, Noel arranged to take over the maintainence of the website, which was now hosted at http://www.redbrick.dcu.ie/~noel/linux4chemistry/.
 
 The main changes to the website at this stage were:
 (1) addition of a searchable form
@@ -16,7 +16,7 @@ The main changes to the data were:
 (3) non-chemistry software removed
 (4) on request, chemistry software added
 
-At the end of July 2006, the next stage in the evolution of l4c occurred. A project website was established at the Google Code hosting site. This allowed the creation of the infrastructure required for collaboration on linux4chemistry: subversion repository, and mailing lists. In addition, a del.icio.us account was created to store bookmarks of websites to be investigated for software. Rajarshi Guha was added as editor.
+At the end of July 2006, the next stage in the evolution of l4c occurred. A project website was established at the Google Code hosting site. This allowed the creation of the infrastructure required for collaboration on linux4chemistry: subversion repository, and mailing lists. In addition, a del.icio.us account was created to store bookmarks of websites to be investigated for software.
 
 What is chemistry software?
 ===========================
