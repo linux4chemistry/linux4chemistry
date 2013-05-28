@@ -15,6 +15,9 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 
+    # provide access to the CCL rss feed
+    url(r'^ccl-rss/', include('cclfeed.urls')),
+
     # redirect everything to the app reimplementing the original site
     url(r'', include('oldsite.urls')),
 )
