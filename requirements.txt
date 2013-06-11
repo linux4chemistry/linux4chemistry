@@ -1,5 +1,4 @@
 mimeparse>=0.1.3
 python-dateutil
 Django>=1.5
-uWSGI
 -e git+git://github.com/linux4chemistry/django-cclfeed.git@master#egg=django-cclfeed
