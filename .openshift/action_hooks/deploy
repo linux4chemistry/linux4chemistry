@@ -8,3 +8,4 @@ ln -s openshift.py __init__.py
 cd ${OPENSHIFT_REPO_DIR}linux4chemistry
 python manage.py syncdb --noinput
 python manage.py collectstatic --noinput
+python manage.py loadmessages # load CCL messages
