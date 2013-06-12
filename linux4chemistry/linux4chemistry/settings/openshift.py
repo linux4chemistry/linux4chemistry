@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     'www.linux4chemistry.info',
     ]
 
-#"""
+"""
 LOGGING['handlers'].update({
         'logfile': {
             'class': 'logging.handlers.WatchedFileHandler',
@@ -49,4 +49,4 @@ LOGGING['loggers'].update({
             'propagate': False,
             },
         })
-#"""
+"""
