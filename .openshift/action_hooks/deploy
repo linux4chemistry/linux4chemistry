@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source ${OPENSHIFT_PYTHON_DIR}virtenv/bin/activate
+
+cd ${OPENSHIFT_REPO_DIR}linux4chemistry/linux4chemistry/settings
+ln -s openshift.py __init__.py
+
+cd ${OPENSHIFT_REPO_DIR}linux4chemistry
+python manage.py syncdb --noinput
+python manage.py collectstatic --noinput
