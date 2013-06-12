@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source ${OPENSHIFT_PYTHON_DIR}virtenv/bin/activate
+
+pip install --upgrade \
+    git+git://github.com/linux4chemistry/django-cclfeed.git#egg=django-cclfeed

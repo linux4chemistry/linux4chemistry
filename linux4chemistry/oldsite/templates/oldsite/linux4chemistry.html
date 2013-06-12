@@ -1,0 +1,137 @@
+{% extends 'oldsite/base.html' %}
+{% load l4c %}
+
+{% block title %}
+Linux4Chemistry - Linux software for chemistry: molecular modeling,
+visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
+{% endblock %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block page_contents %}
+    <table width="95%" align="center">
+      <tr>
+	<td><img src="{{ STATIC_URL }}img/logo_200x305.png" 
+		 alt="Welcome to Linux4Chemistry"/></td>
+	<td>
+	  <h1 style="{text-align:center; font-family:Arial}">Linux4Chemistry</h1>
+	  <table align="center" cellpadding="5%">
+	    <tr align="center">
+	      <td></td>
+	      <td><img src="{{ STATIC_URL }}img/opensource_big.png" name="opensource" align="bottom" border="0"/></td>
+	      <td><img src="{{ STATIC_URL }}img/freeware_big.png" name="freeware" align="bottom" border="0"/></td>
+	      <td><img src="{{ STATIC_URL }}img/academic_big.png" name="academic" align="bottom" border="0"/></td>
+	      <td><img SRC="{{ STATIC_URL }}img/shareware_big.png" align="bottom" border="0"/></td>
+	      <td><img SRC="{{ STATIC_URL }}img/commercial_big.png" align="bottom" border="0"/></td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td></td>
+	      <td>Open Source</td>
+	      <td>Freeware</td>
+	      <td>Free for academics</td>
+	      <td>Shareware</td>
+	      <td>Commercial</td>
+	      <td><font size="-1">
+		  <a href="{% url 'license_definition' %}">[Explain]</a>
+	      </font></td>
+	    </tr>
+	    <form action="{% url 'home' %}" method="post">
+	      {% csrf_token %}
+	      <tr>
+		<td>
+		  <input type="button" id="select-all" value="All"/>
+		</td>
+		<td align="center">{{ form.open_source }}</td>
+		<td align="center">{{ form.freeware }}</td>
+		<td align="center">{{ form.academic }}</td>
+		<td align="center">{{ form.shareware }}</td>
+		<td align="center">{{ form.commercial }}</td>
+		<td>
+		  <input type="button" id="select-none" value="None"/>
+		</td>
+	      </tr>
+	      <tr>
+		<td></td>
+		<td colspan="5" align="center">
+		  {{ form.category }}
+		  &nbsp;<input type="submit" value="Search"/></td>
+	      </tr>
+	    </form>
+	    
+	  </table>
+	</td>
+	<td align="center">
+	  <p><a href="http://www.vlib.org" target="_blank">
+	      <img src="http://vlib.org/VL.gif" alt="WWW Virtual Library" 
+		   border="0" align="center"></a></p>
+	  <strong>
+	    <font face="Arial" size="-1">
+	      <a href="http://www.liv.ac.uk/Chemistry/Links/links.html">
+		Chemistry Section</a><br/>
+	      of the <a href="http://www.vlib.org">WWW Virtual Library</a>
+	    </font>
+	  </strong>
+	</td>
+      </tr>
+    </table>
+    
+    <p>
+      Linux4Chemistry provides information about computational chemistry 
+      software for the Linux operating system 
+      (<a href="{% url 'contributors' %}">contributors</a>).
+      To add a program or report an error, please submit a
+      <a href="https://github.com/linux4chemistry/linux4chemistry/issues/new">
+	ticket</a>.
+      Keep informed of new entries with our RSS feed. 
+      <a href="{{ STATIC_URL }}rss/l4c-rss.xml">
+	<img src="{{ STATIC_URL }}img/feed-icon-14x14.png" 
+	     alt="L4C feed" border="0" /></a> 
+      Keep up to date with the CCL list with this unofficial RSS feed. 
+      <a href="/ccl-rss/">
+	<img src="{{ STATIC_URL }}img/feed-icon-14x14.png" 
+	     alt="CCL feed" border="0" />
+      </a>
+    </p>
+
+    <br/>
+
+    {% if programs %}
+    <ul>{% for program in programs %}
+      <li>
+	<table width="97%">
+	  <tr>
+	    <td>
+	      <strong>
+		<a href="{{ program.web }}">{{ program.name }}</a>
+	      </strong>
+	      {{ program.lic|license_img }}
+	      <tt>{{ program.categories }}</tt>
+            </td>
+	    <td align="right">
+	      <tt>{{ program.lang }}</tt>
+	    </td>
+	  </tr>
+	</table>
+	<ul><li><p style="text-align:justify">{{ program.desc }}</p></li></ul>
+      </li>
+    {% endfor %}</ul>
+      <p align="center">{{ programs|length }} results found</p>
+    {% else %}
+      <p align="center">No results found</p>
+    {% endif %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script>
+      $(function() {
+        $('#select-all').click(function (e) {
+          $('input:checkbox').prop('checked', true);
+        });
+        $('#select-none').click(function (e) {
+          $('input:checkbox').prop('checked', false);
+        });
+      });
+    </script>
+{% endblock %}    
