@@ -10,7 +10,7 @@ TOP_DIR = os.environ.get('OPENSHIFT_REPO_DIR')
 DATA_DIR = os.environ.get('OPENSHIFT_DATA_DIR')
 
 MEDIA_ROOT = os.path.join(DATA_DIR, 'media/')
-STATIC_ROOT = os.path.join(TOP_DIR, 'static/')
+STATIC_ROOT = os.path.join(TOP_DIR, 'wsgi', 'static')
 
 DATABASES = {
     'default': {
@@ -29,9 +29,9 @@ SECRET_KEY = secret.SECRET_KEY
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = [
-    'devel-l4c.rhcloud.com',
-    'test-l4c.rhcloud.com',
-    'prod-l4c.rhcloud.com',
+    'devel-linux4chemistry.rhcloud.com',
+    'test-linux4chemistry.rhcloud.com',
+    'prod-linux4chemistry.rhcloud.com',
     'www.linux4chemistry.info',
     ]
 
