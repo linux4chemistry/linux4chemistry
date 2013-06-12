@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Python 2.7 cartridge app.py script
 import imp
 import os
 import sys
