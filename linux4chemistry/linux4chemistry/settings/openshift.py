@@ -28,10 +28,9 @@ SECRET_KEY = secret.SECRET_KEY
  
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
+OPENSHIFT_APP_DNS = os.environ.get('OPENSHIFT_APP_DNS')
 ALLOWED_HOSTS = [
-    'devel-linux4chemistry.rhcloud.com',
-    'test-linux4chemistry.rhcloud.com',
-    'prod-linux4chemistry.rhcloud.com',
+    OPENSHIFT_APP_DNS,
     'www.linux4chemistry.info',
     ]
 
