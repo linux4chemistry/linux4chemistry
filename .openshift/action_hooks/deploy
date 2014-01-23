@@ -1,0 +1,19 @@
+#!/bin/bash
+
+source ${OPENSHIFT_PYTHON_DIR}virtenv/bin/activate
+
+pushd ${OPENSHIFT_DATA_DIR}
+if ! [ -e secret.py ]; then
+    echo "SECRET_KEY = \"`cat /dev/urandom | head -c 1024 | sha256sum | base64 | head -c 40`\"" >> secret.py
+fi
+popd
+
+pushd ${OPENSHIFT_REPO_DIR}linux4chemistry/linux4chemistry/settings
+ln -s openshift.py __init__.py
+popd
+
+pushd ${OPENSHIFT_REPO_DIR}linux4chemistry
+python manage.py syncdb --noinput
+python manage.py collectstatic --noinput
+python manage.py loadcclmessages
+popd
