@@ -11,6 +11,6 @@ setup(name='Linux4Chemistry',
       author='Linux4Chemistry', author_email='ueb@linux4chemistry.info',
       url='http://www.linux4chemistry.info',
 
-      install_requires=(['greenlet', 'gevent',] +
-                        open(requirements).readlines()),
+      # install_requires=(['greenlet', 'gevent',] +
+      install_requires=(open(requirements).readlines()),
      )
