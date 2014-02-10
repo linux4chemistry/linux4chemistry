@@ -1,8 +1,9 @@
+from django.conf import settings
 from django.conf.urls import patterns, include, url
 
-# Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+if 'django.contrib.admin' in settings.INSTALLED_APPS:
+    from django.contrib import admin
+    admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
@@ -12,12 +13,15 @@ urlpatterns = patterns('',
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
-    # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
-
     # provide access to the CCL rss feed
     url(r'^ccl-rss/', include('cclfeed.urls')),
 
     # redirect everything to the app reimplementing the original site
     url(r'', include('oldsite.urls')),
 )
+
+if 'django.contrib.admin' in settings.INSTALLED_APPS:
+
+    urlpatterns += patterns('',
+        url(r'^admin/', include(admin.site.urls)),
+    )

@@ -15,6 +15,7 @@ MIDDLEWARE_CLASSES += (
 )
 
 INSTALLED_APPS += (
+    'django.contrib.admin',
     'debug_toolbar',
 )
 
