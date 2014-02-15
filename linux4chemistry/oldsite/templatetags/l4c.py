@@ -19,6 +19,7 @@ def license_img(value, autoescape=None):
     esc = conditional_escape if autoescape else lambda x: x
     element = '&nbsp;<img src="{0}{{0}}"/>'.format(esc(settings.STATIC_URL))
 
-    output = element.format(esc(images[value])) if value in images else ''
+    name = value.name
+    output = element.format(esc(images[name])) if name in images else ''
     return mark_safe(output)
 

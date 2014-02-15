@@ -97,27 +97,27 @@ visualization, graphic, quantum mechanic, dynamic, kinetic, simulation
 
     <br/>
 
-    {% if programs %}
-    <ul>{% for program in programs %}
+    {% if softwares %}
+    <ul>{% for software in softwares %}
       <li>
 	<table width="97%">
 	  <tr>
 	    <td>
 	      <strong>
-		<a href="{{ program.web }}">{{ program.name }}</a>
+		<a href="{{ software.url }}">{{ software.name }}</a>
 	      </strong>
-	      {{ program.lic|license_img }}
-	      <tt>{{ program.categories }}</tt>
+	      {{ software.license_model | license_img }}
+	      <tt>{{ software.all_categories }}</tt>
             </td>
 	    <td align="right">
-	      <tt>{{ program.lang }}</tt>
+	      <tt>{{ software.open_source_info }}</tt>
 	    </td>
 	  </tr>
 	</table>
-	<ul><li><p style="text-align:justify">{{ program.desc }}</p></li></ul>
+	<ul><li><p style="text-align:justify">{{ software.description }}</p></li></ul>
       </li>
     {% endfor %}</ul>
-      <p align="center">{{ programs|length }} results found</p>
+      <p align="center">{{ softwares|length }} results found</p>
     {% else %}
       <p align="center">No results found</p>
     {% endif %}

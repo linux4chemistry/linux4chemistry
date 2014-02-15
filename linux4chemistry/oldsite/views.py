@@ -4,6 +4,8 @@ from collections import namedtuple
 from django.core.urlresolvers import reverse
 from django.views.generic import TemplateView, FormView
 
+from l4c.models import Software
+
 from . import forms
 
 class Linux4ChemistryView(FormView):
@@ -24,8 +26,8 @@ class Linux4ChemistryView(FormView):
         """
         form_class = self.get_form_class()
         form = self.get_form(form_class)
-        programs = self.get_programs(self._form2search(self.get_initial()))
-        context = dict(form=form, programs=programs)
+        softwares = self.get_softwares(self._form2search(self.get_initial()))
+        context = dict(form=form, softwares=softwares)
         return self.render_to_response(self.get_context_data(**context))
 
     def form_valid(self, form):
@@ -34,54 +36,31 @@ class Linux4ChemistryView(FormView):
         """
         # instead of redirecting to a new page we render the current one
         # again.
-        programs = self.get_programs(self._form2search(form.cleaned_data))
-        context = dict(form=form, programs=programs)
+        softwares = self.get_softwares(self._form2search(form.cleaned_data))
+        context = dict(form=form, softwares=softwares)
         return self.render_to_response(self.get_context_data(**context))
 
     def form_invalid(self, form):
         # we expect the form to be valid in any configuration
         raise NotImplementedError
 
-    def get_programs(self, searchdata):
-        """Return a list of the selected programs"""
-        Program = namedtuple('Program', 
-                             'name web categories lic lang desc')
-        filepath = os.path.join(os.path.dirname(__file__), 'data', 'l4c.txt')
-
-        programs = []
+    def get_softwares(self, searchdata):
+        """Return a list of the selected softwares"""
 
         category = searchdata['category']
         licenses = set(k for (k, v) in searchdata.items() 
                        if k in forms.LICENSE_NAMES and v)
 
-        with open(filepath, 'r') as data:
-            data.next() # skip header
-            for record in data:
-                fields = [f.strip() for f in record.split('\t')]
-                (name, web, cat, other_cat, lic, lang, desc) = fields[:7]
-                cat = [c.strip() for c in cat.split(',')] if cat else []
-                other_cat = ([c.strip() for c in other_cat.split(',')] 
-                             if other_cat else [])
+        queryset = Software.objects.all()
+        
+        queryset = queryset.filter(license_model__name__in=licenses)
 
-                if lic not in licenses:
-                    continue
-
-                if (category not in ('all', 'other') and category not in cat):
-                    continue
-
-                if (category == 'other' and cat):
-                    continue
-
-                categories = ', '.join(
-                    [forms.CATEGORIES.get(c, c) for c in cat] +
-                    other_cat
-                    )
-                
-                programs.append(
-                    Program._make((name, web, categories, lic, lang, desc))
-                    )
-
-        return programs
+        if category not in ('all', 'other'):
+            queryset = queryset.filter(categories__label=category)
+        elif category == 'other':
+            queryset = queryset.filter(categories=None)
+            
+        return queryset.order_by('name')
 
     def get_success_url(self):
         return reverse('home')
