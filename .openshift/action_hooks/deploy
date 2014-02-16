@@ -14,6 +14,8 @@ popd
 
 pushd ${OPENSHIFT_REPO_DIR}linux4chemistry
 python manage.py syncdb --noinput
+python manage.py migrate l4c
+python manage.py l4c_load
 python manage.py collectstatic --noinput
 python manage.py loadcclmessages
 popd
