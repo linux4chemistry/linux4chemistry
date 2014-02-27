@@ -99,6 +99,7 @@ INSTALLED_APPS = (
     'south',
     'cclfeed',
     'l4c',
+    'rest_framework',
     'oldsite',
 )
 
