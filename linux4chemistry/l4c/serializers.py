@@ -19,12 +19,12 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class SoftwareSerializer(serializers.ModelSerializer):
 
-    #categories
-    #license_model
+    license_model = serializers.PrimaryKeyRelatedField(read_only=True)
+    categories = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
 
     class Meta:
         model = Software
         fields = (
-            'id', 'name', 'url', 'other_categories',
-            'open_source_info', 'description'
+            'id', 'name', 'url', 'license_model', 'open_source_info', 
+            'categories', 'other_categories', 'description'
             )

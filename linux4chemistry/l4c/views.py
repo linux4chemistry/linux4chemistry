@@ -17,7 +17,7 @@ class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
 
 
 class SoftwareViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Software.objects.all()
+    queryset = Software.objects.all().prefetch_related('categories')
     serializer_class = SoftwareSerializer
     
 
