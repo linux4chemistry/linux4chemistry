@@ -60,7 +60,12 @@ class Linux4ChemistryView(FormView):
         elif category == 'other':
             queryset = queryset.filter(categories=None)
             
-        return queryset.order_by('name')
+        queryset = queryset.order_by('name')
+
+        queryset = queryset.select_related('license_model')
+        queryset = queryset.prefetch_related('categories')
+
+        return queryset
 
     def get_success_url(self):
         return reverse('home')
