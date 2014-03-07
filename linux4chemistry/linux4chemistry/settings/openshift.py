@@ -15,7 +15,7 @@ STATIC_ROOT = os.path.join(TOP_DIR, 'wsgi', 'static')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(DATA_DIR, 'linux4chemistry.sqlite3'),
+        'NAME': os.path.join(TOP_DIR, 'linux4chemistry.sqlite3'),
     }
 }
 
