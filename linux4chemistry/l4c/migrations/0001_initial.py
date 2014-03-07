@@ -24,7 +24,7 @@ class Migration(SchemaMigration):
 
         # Adding model 'Software'
         db.create_table(u'l4c_software', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('id', self.gf('django.db.models.fields.CharField')(max_length=25, primary_key=True)),
             ('name', self.gf('django.db.models.fields.CharField')(max_length=50)),
             ('url', self.gf('django.db.models.fields.URLField')(max_length=200)),
             ('other_categories', self.gf('django.db.models.fields.CharField')(max_length=50)),
@@ -75,7 +75,7 @@ class Migration(SchemaMigration):
             'categories': ('django.db.models.fields.related.ManyToManyField', [], {'to': u"orm['l4c.Category']", 'symmetrical': 'False'}),
             'comments': ('django.db.models.fields.TextField', [], {}),
             'description': ('django.db.models.fields.TextField', [], {}),
-            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'id': ('django.db.models.fields.CharField', [], {'max_length': '25', 'primary_key': 'True'}),
             'license_model': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['l4c.LicenseModel']"}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
             'open_source_info': ('django.db.models.fields.CharField', [], {'max_length': '100'}),

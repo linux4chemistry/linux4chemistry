@@ -1,3 +1,5 @@
+import uuid
+
 from django.db import models
 
 
@@ -23,6 +25,7 @@ class Category(_SoftwareCategory):
 
 class Software(models.Model):
 
+    id = models.CharField(primary_key=True, max_length=25)
     name = models.CharField(max_length=50)
     url = models.URLField()
     categories = models.ManyToManyField(Category)
@@ -38,6 +41,11 @@ class Software(models.Model):
         if self.other_categories:
             categories += map(lambda c: c.strip(), self.other_categories.split(','))
         return ', '.join(categories)
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            self.id = str(uuid.uuid4())
+        super(Software, self).save(*args, **kwargs)
 
     def __unicode__(self):
         return self.name
