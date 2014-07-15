@@ -10,7 +10,7 @@ TOP_DIR = os.environ.get('OPENSHIFT_REPO_DIR')
 DATA_DIR = os.environ.get('OPENSHIFT_DATA_DIR')
 
 MEDIA_ROOT = os.path.join(DATA_DIR, 'media/')
-STATIC_ROOT = os.path.join(TOP_DIR, 'wsgi', 'static')
+STATIC_ROOT = os.path.join(TOP_DIR, 'static')
 
 DATABASES = {
     'default': {
