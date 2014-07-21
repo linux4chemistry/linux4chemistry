@@ -8,11 +8,11 @@ if ! [ -e secret.py ]; then
 fi
 popd
 
-pushd ${OPENSHIFT_REPO_DIR}linux4chemistry/linux4chemistry/settings
+pushd ${OPENSHIFT_REPO_DIR}l4c_db/linux4chemistry/settings
 ln -s openshift.py __init__.py
 popd
 
-pushd ${OPENSHIFT_REPO_DIR}linux4chemistry
+pushd ${OPENSHIFT_REPO_DIR}l4c_db
 python manage.py syncdb --noinput
 python manage.py migrate l4c
 python manage.py l4c_load

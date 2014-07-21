@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ${OPENSHIFT_PYTHON_DIR}virtenv/bin/activate
+. ${OPENSHIFT_DATA_DIR}env.sh
 
-cd ${OPENSHIFT_REPO_DIR}linux4chemistry
+cd ${OPENSHIFT_REPO_DIR}l4c_db
 python manage.py purgecclmessages
