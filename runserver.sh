@@ -1,5 +1,4 @@
 #!/bin/sh
-echo `dirname $0`
 
 export OPENSHIFT_DIY_IP=0.0.0.0
 export OPENSHIFT_DIY_PORT=8000
