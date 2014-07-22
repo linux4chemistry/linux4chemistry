@@ -10,23 +10,9 @@ _SETTINGS_DIR = os.path.dirname(__file__)
 TOP_DIR = os.path.normpath(os.path.join(_SETTINGS_DIR, "../../../"))
 DATA_DIR = os.path.normpath(os.path.join(TOP_DIR, "../dev-data"))
 
-DEBUG_TOOLBAR_PATCH_SETTINGS = False
-
-MIDDLEWARE_CLASSES += (
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
-)
-
 INSTALLED_APPS += (
     'django.contrib.admin',
-    'debug_toolbar',
 )
-
-## deprecated
-#DEBUG_TOOLBAR_CONFIG = {
-#    'INTERCEPT_REDIRECTS': False,
-#}
-
-INTERNAL_IPS = ('127.0.0.1',)
 
 MEDIA_ROOT = os.path.join(DATA_DIR, 'media/')
 STATIC_ROOT = os.path.join(TOP_DIR, 'static')
