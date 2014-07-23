@@ -2,4 +2,6 @@
 
 . ${OPENSHIFT_DATA_DIR}env.sh
 
-uwsgi --ini ${OPENSHIFT_REPO_DIR}uwsgi/uwsgi.ini
+uwsgi \
+    --ini ${OPENSHIFT_REPO_DIR}uwsgi/uwsgi-common.ini \
+    --ini ${OPENSHIFT_REPO_DIR}uwsgi/uwsgi-openshift.ini
